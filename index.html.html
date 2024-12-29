@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+            body {
+              background-image: url("https://i.pinimg.com/736x/b1/b7/36/b1b736c417cadd75ce1e818f8ea1fb95.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+              height: 100vh;
+              margin: 0;
+              padding: 0;
+              overflow-y: auto;
+            }
+            .container {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 20px; /* Tạo khoảng cách đều giữa các phần tử */
+              margin-top: 20px;
+              padding: 0 20px;
+            }
+            footer {
+              background-color: #90ee90; /* Màu xanh lá cây nhạt */
+              border-radius: 50%; /* Hình tròn */
+              padding: 15px 30px;
+              width: 200px; /* Điều chỉnh lại chiều rộng */
+              height: 200px; /* Điều chỉnh lại chiều cao */
+              text-align: center;
+              color: #ff1493; /* Chữ màu hồng */
+              font-size: 16px; /* Giảm kích thước chữ để vừa với khối */
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+              margin: 20px auto;
+              font-family: "Baloo 2";
+            }
+            .header {
+              background-color: #4682b4;
+              border-radius: 20px;
+              box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+              padding: 15px;
+              font-size: 25px;
+              color: #ffffff;
+              text-align: center;
+              margin: 20px;
+              font-family: "Baloo 2";
+            }
+            .TieuDeBang {
+                background-color: #ff1493;
+                color: #000000;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                padding: 10px;
+                text-align: center;
+                font-size: 20px;
+            }
+            .Bang {
+                width: 100%;
+                max-width: 500px; /* Giới hạn chiều rộng để tránh quá rộng trên màn hình lớn */
+                background-color: #ffffff;
+                border-radius: 20px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                transition: background-color 2s ease-out 100ms;
+            }
+            .Bang:hover {
+                box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+            }
+            .Bang a {
+                text-decoration: none;
+                color: black;
+            }
+            .Bang img {
+                width: 100%; /* Đảm bảo hình ảnh tự động chiếm toàn bộ chiều rộng */
+                max-height: 200px; /* Hạn chế chiều cao của hình ảnh */
+                object-fit: cover;
+                border-radius: 20px;
+                margin-bottom: 15px;
+            }
+            .Bang p {
+                padding: 0 15px 15px;
+                text-align: justify;
+                font-size: 16px;
+            }
+      /* CSS cho màn hình điện thoại */
+      @media only screen and (max-width: 550px) {
+        .header {
+          font-size: 20px;
+        }
+        .TieuDeBang {
+          font-size: 18px;
+        }
+        .Bang {
+          max-width: 100%;
+        }
+      }
+      </style>
+    <script>
+        document.documentElement.style.setProperty("--MauChuDao", "#ff1493");
+        document.documentElement.style.setProperty("--MauPhu", "#4682b4");
+        document.documentElement.style.setProperty("--MauChu", "#000000");
+    </script>
+</head>
+<body>
+  <header class="header">
+      <b>Tìm hiểu di tích lịch sử cầu Hiền Lương</b>
+  </header>
+  <div class="container">
+      <div class="Bang">
+         <a href="gioithieuchung.html">
+          <div class="TieuDeBang"><b>Giới thiệu chung về cầu Hiền Lương</b></div>
+          <img src="https://baoquangngai.vn/file/8a10a0d36ccebc89016ce0c6fa3e1b83/072024/z5666900544143_dt_20240726163643.jpg" alt="Giới thiệu chung về cầu Hiền Lương">
+          <p>
+            - Cầu Hiền Lương bắc qua sông Bến Hải, Quảng Trị.<br>
+            - Là biểu tượng chia cắt đất nước trong chiến tranh Việt Nam.<br>
+            - Xây dựng lần đầu năm 1952, bị phá hủy rồi phục dựng lại.<br>
+            - Phục dựng vào năm 2001, hoàn thành năm 2003.<br>
+            - Trở thành di tích lịch sử quan trọng.
+          </p>
+         </a>
+      </div>
+      <div class="Bang">
+         <a href="ditichlichsu.html">
+          <div class="TieuDeBang"><b>Các công trình và di tích liên quan tại khu vực cầu Hiền Lương</b></div>
+          <img src="https://ddk.1cdn.vn/thumbs/540x360/2015/11/27/image.daidoanket.vn-images-upload-2020-5-22-_cot-co-ben-bo-hien-luong-71-27112015163119.jpg" alt="Các di tích tại khu vực cầu Hiền Lương">
+          <p>
+            - Nhà Liên hợp tái hiện phòng họp giao ban giữa hai miền.<br>
+            - Cột cờ Hiền Lương cao 28m, biểu tượng chia cắt đất nước.<br>
+            - Hệ thống loa phóng thanh bờ Bắc gồm 33 loa, hướng về cả hai bờ.<br>
+            - Cụm tượng đài "Khát vọng thống nhất".
+          </p>
+         </a>
+      </div>
+      <div class="Bang">
+        <a href="phucdung.html">
+         <div class="TieuDeBang"><b>Lịch sử và sự kiện quan trọng của cầu Hiền Lương:</b></div>
+         <img src="https://vcdn1-vnexpress.vnecdn.net/2024/07/22/1_1721636537-1721636827.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=kezoACUqjlVMagTCQWL0NQ" alt="Phục dựng và bảo tồn di tích cầu Hiền Lương">
+         <p>
+          - Sông Bến Hải chia cắt Việt Nam sau 1954.<br>
+          - "Cuộc chiến màu sắc" (1954-1960).<br>
+          - "Cuộc chiến âm thanh" (1954-1964).<br>
+          - Cầu Hiền Lương là biểu tượng chia cắt.
+         </p>
+        </a>
+     </div>
+  </div>
+  <footer>
+      <p>Thực hiện bởi Nguyễn Đức Nhật Anh, Nguyễn Thị Quỳnh Như và Hoàng Thảo Nguyên - 26/12/2024</p>
+  </footer>
+</body>
+</html>
